@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after pseudo selector</title>
+</head>
+<style>
+    body{
+         background-color: black;
+        color: rgb(248, 255, 240);
+         margin: 0px;
+        padding: 0px; 
+        /* background:url('image/food.jpg') no-repeat center center/cover ; */
+     
+    }
+header::before{
+    background:url('image/food.jpg') no-repeat center center/cover ;
+    content: "";
+    top:0;
+    left: 0;
+    
+    
+    position: absolute;
+    width: 100%;
+    height: 100%;
+z-index: -1;
+opacity: 0.5;
+
+}
+    
+    header{
+        display: flex;
+        flex-direction:column;
+    }
+ul{
+       display: flex;
+       font-size: 20px; 
+      
+    }
+    li{
+        list-style: none;
+        padding: 0px 20px;
+        margin: 0px 10px;
+    }
+    section{
+        margin: 63px 62px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 26em;
+    justify-content: center;
+}
+
+    
+section::before{
+content: "HI !";
+margin: 1px 2px;
+
+}
+h1{
+    font-size: 5em;
+
+}
+p{
+    text-align: center;
+    font-size: 1em;
+    margin: -50px -10px;
+    padding: 2px 49px;
+
+}
+</style>
+<body>
+    <header>
+    <nav class="navbar">
+        <ul>
+            <li class="item">Home</li>
+            <li class="item">Service</li>
+            <li class="item">About</li>
+            <li class="item">Contact</li>
+        </ul>
+    </nav>
+</header>
+    <section>
+        <h1>Welcome To Hell</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos quasi consequuntur velit blanditiis ad soluta reprehenderit non, nesciunt fuga praesentium delectus odio eveniet. Ut rem dignissimos ducimus cupiditate autem, aliquam odio, cumque, minus fugit quasi placeat. Rem, voluptas molestiae laborum doloribus tempore possimus eveniet unde sit reprehenderit eos sint odio amet, ipsa quis eaque sequi est. Perferendis assumenda ratione maxime libero ullam quae unde velit maiores fuga asperiores corrupti quam mollitia, blanditiis commodi? Repellat a error ullam officiis provident similique facere rem voluptatem corrupti aut voluptatibus dolores nulla soluta minima aspernatur beatae, commodi atque molestias minus alias pariatur numquam eaque?</p>
+    </section>
+  
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css transfrom
+    </title>
+</head>
+<style>
+    /*    * it means all  */
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .box{
+        background: brown;
+        border: 2px solid red;
+        border-radius: 12px;
+        height: 200px;
+        width: 200px;
+        font-size: 20px;
+       
+        display:flex;
+        justify-content: center;
+        align-items: center;
+       /*  (box will be transfrom in 45 degree) */
+     transition: all 1s ease-in-out;
+        
+
+  
+    }
+    .box:hover{
+        /* transform:rotate(360deg);  (box will be transfrom in 360 degree) */
+        /* transform:skew(40deg);  */
+         /* transform:scale(2);  2 times big hunxa */
+         /* transform:translatex(123px);   /*  (x-axis tira 123px le sarxa) */
+         /* transform:translateY(100px)  (y-axis tira 100px le sarxa) */
+         
+    }
+    .container{
+height: 80vh;
+        background-color: blue;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+</style>
+<body>
+    
+    <div class="container">
+        <div class="box">
+sabin 
+        </div>
+    </div>
+</body>
+</html>

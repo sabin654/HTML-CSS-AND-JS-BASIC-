@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>set time out</title>
+</head>
+<body>
+
+    <style>
+        body{
+            background-image: url(s.jpg) ;
+        }
+        #time{
+            /* background-image:url(banner.png); */
+
+            border: 5px solid rgb(105, 103, 103);
+            margin: 225px;
+
+            display: flex;
+          align-items: center;
+            justify-content: center;
+            height: 200px;
+            font-size: 30px;
+            /* background-color: rgb(180, 155, 41); */
+            border-radius: 30px;   
+            cursor: pointer;
+            color: white;
+            z-index: -10;
+            opacity: 2;
+
+
+            
+
+        }
+       
+
+    </style>
+    <div class="container">
+     
+      
+       <span    id= "time"></span> 
+
+    </div>
+
+
+    <script>
+
+        // setTimeout- allows to run the function once after the interval of time
+        // cleartimeout- allous to run the fuction repediately after the interval of time 
+
+
+        // set time out-
+        function b(name,age){
+            console.log("hello dear, your name is " + name + "and your age is "+ age);
+        }
+        // setTimeout(b,5000,'sabin',23);  //  (yesle chai 5 sec paxi console ma dispkay garxa and 5000 means 5 sec cuz milisecond ma hunxa so )
+// ............................................................ 
+    //    cleartimeout
+
+        // aba settimeout ko call nadekhauna ko lagi we use cleartimeout  eg:
+         
+        // timeOut=setTimeout(b,5000,'sabin',23);
+        // console.log(timeOut);
+
+        // clearTimeout(timeOut);
+
+// set interval 
+// .................................................................
+
+// setInterval(a,1000,'sabin',22);
+// ......................................................................................
+// // clearinterval 
+// clear= setInterval(a,1000,'sabin',22);
+// clearInterval(clear);
+
+
+function displayTime(){
+    time=new Date();
+    console.log(time);
+    document.getElementById('time').innerHTML=time;
+
+}
+setInterval(displayTime,1000);
+// clearInterval(displayTime);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid</title>
+</head>
+<style>
+   .container{
+       display: grid;
+       /* grid-template-columns:100px auto 100px; */
+       /* grid-template-columns: 1fr 9fr 2fr 3fr 1fr; */
+       grid-gap: 2rem;
+       grid-template-columns: repeat(2, 2fr);   /*2 ta colum banaux ra 2fr bahneko space linxa 2 fr where fr means fraction jati ko*/
+   }
+   .item{
+     
+       background-color: red;
+       margin: 3px;
+       
+   }
+</style>
+<body>
+    <div class="container">
+<!-- div.item{dabba $}*5  short form-->
+<div class="item">dabba 1</div>
+<div class="item">dabba 2</div>
+<div class="item">dabba 3</div>
+<div class="item">dabba 4</div>
+<div class="item">dabba 5</div>
+    </div>
+</body>
+</html>

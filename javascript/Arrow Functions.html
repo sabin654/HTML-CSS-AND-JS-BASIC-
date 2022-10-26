@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        this is allow function tutoral 
+
+    </div>
+    <script>
+
+       
+//  this simple function 
+    // function a(age,height){
+    //     console.log("good morning sabin he is " + age + " his height is "+ height ")
+    
+    // }
+    // a(22, " 5'12 ");
+
+// &  
+
+// arrow function  shorcurt  
+    // a= (age,height) =>{
+    // console.log("good morning sabin he is " + age + " his height is "+ height);
+    // }
+    // a(22, " 5'12 ");
+
+    // or 
+    // shortcut of short cut 
+    a= (age,height) => console.log("good morning sabin he is " + age + " his height is "+ height);
+    a(22, " 5'12 ");
+// .......................................................................... 
+
+// both are same 
+
+// this 
+//     function b(){
+//         console.log("sabin")
+//     }
+//     b();
+//     setTimeout(b,3000);
+
+//     // & 
+
+// setTimeout(()=>{
+//     console.log("hey thi is me sabin");
+
+// },8000);
+
+
+// .....................................................................
+
+
+let sum=(a,b)=>{
+    return a+b;
+}
+
+// shortcut bhitra ni arko shortcut arrow again with out return:
+ let sum1=(a,b)=> a+b; // this is use in console 
+
+let half = a=>a/2; // half garxa a ko value lai console ma 
+//  ........................................................................ 
+
+
+
+
+// create object  first 
+let obj={
+    name:["sabin","samikshya","rohan","srk"],
+
+    // create funct(ion name called s 
+    s(){
+        this.name.forEach((student)=>{
+           console.log("hello "+ student);
+     } );
+    }
+}
+// pass function in object 
+obj.s();
+
+
+
+
+// .......................................................................
+
+// example 1 
+function sabin(name,age){   
+    let a= (name+age)
+return a;
+}
+let b= sabin('sabin','20');
+console.log(b);
+
+// using array function short curt 
+// both are same 
+
+let sb=(fname,age)=>(fname+age);
+let g=sb("sabin",29);
+console.log(g);
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>

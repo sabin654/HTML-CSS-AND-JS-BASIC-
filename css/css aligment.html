@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>float and clear</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Yanone+Kaffeesatz:wght@300;400&display=swap"
+        rel="stylesheet">
+   
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Anton', sans-serif;
+           
+        }
+
+        .contener {
+
+            width: 700px;
+            border: 5px solid rgb(230, 173, 88);
+            margin: 100px auto;
+            /* ( auto means automatially in center and 100px means in y-axix) */
+            
+           
+        }
+
+        .item {
+            border: 5px solid purple;
+            margin: 12px 3px;
+            padding: 15px 20px;
+            background-color: rgb(242, 242, 250);
+        }
+        #fruit{
+           float:left;
+           width:45%;
+
+
+        }
+
+        #computer{
+            float:left;
+            width:49%
+        
+            
+            
+        }
+
+        #apple{
+            /* float:right; */
+            width:50%;
+            clear: both;
+            
+            
+            
+           
+              
+        }
+        h2{
+            margin:auto;
+            width:100px;
+            height: 50px;
+
+            
+        }
+      
+    </style>
+</head>
+
+<body>
+   
+    <div class="contener">
+        <h2>welcome</h2>
+        <img src="C:\Users\SA   BIN\Desktop/s.jpg" alt="">
+        <div id="fruit" class="item">
+            <h3>fruit</h3>
+            <p id="fruitpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dolor minima
+                neque repellendus. Quae possimus iure porro nemo debitis corporis perspiciatis minus deserunt? 
+               
+
+        </div>
+
+        <div id="computer" class="item">
+            <h3>computer</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dolor minima
+                neque repellendus. Quae possimus iure porro nemo debitis corporis perspiciatis minus deserunt? </p>
+
+        </div>
+
+        <div id="apple" class="item">
+            <h3>apple</h3>
+            <p id="applepara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dolor minima
+                neque repellendus. Quae possimus iure porro nemo debitis corporis perspiciatis minus deserunt? </p>
+
+        </div>
+
+    </div>
+   
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css transistion</title>
+</head>
+<style>
+#box{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    /* transition-property: background-color;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 2s; */
+
+    /* transition shorthand property in one line */
+          transition: all  1s ease-in-out 0.2s ;  /*  it means all will be change */
+
+
+
+/* imp note: transistion will be only apply on height width color margin padding etc which can be changable */
+}
+#box:hover{
+    background-color: brown;
+    height: 400px;
+    width: 400px;
+    border-radius: 20px;
+    font-size: 50px;
+
+    
+
+}
+</style>
+<body>
+    <h3>this is css transistion</h3>
+    <div class="container">
+        <div id="box">
+                this is my box
+        </div>
+    </div>
+    
+</body>
+</html>

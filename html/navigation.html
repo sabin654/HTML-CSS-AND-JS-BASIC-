@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.navbar{
+    background-color: blue;
+    border-radius: 20px;
+    margin-top:10px;
+    border:4px solid rgb(105, 238, 53);
+    
+   
+
+}
+.navbar li :hover{
+ color: rgb(75, 3, 45);
+
+    
+}
+.navbar li{
+     float:left; /* (left ma janxa) */
+   list-style: none;  /*( yo chai bullet hatauna use hunxa) */
+  
+   margin: -10px 10px;
+ 
+    margin-bottom: 7px;
+    padding: 5px 15px;
+ 
+    
+   
+
+
+}
+.navbar{
+     overflow: auto;/*(float use bhayesi backgroud udna sakxa so we use overflow jasle garda backgrounf aauxa) */
+}
+.navbar li a{
+    padding: 3px 3px;
+    color: rgb(248, 198, 198);
+     text-decoration: none; /* yesle text tala ko underline hataune kam garxa  */
+}
+.search{
+    float:right;
+    color:rgb(240, 230, 218);
+  
+    padding:6px 3px;
+    margin: -17px 27px;
+    cursor: pointer; 
+   
+ 
+
+}
+.navbar input{
+    border: 2px solid blue;
+    border-radius: 9px;
+    padding: 2px 6px;
+    margin: 4px -7px;
+    width: 120px;
+
+}
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li> <a href="#">Home</a> </li>
+            <li> <a href="#">About</a> </li>
+            <li> <a href="#">Service</a>  </li>
+            <li> <a href="#">Contact Us</a> </li>
+
+            <div class="search">
+              
+                <input type="text" name="search" id="search" placeholder="search this website">
+                <!-- search bar halna ko lagi we use this  -->
+            </div>
+        </ul>
+
+
+
+    </nav>
+</body>
+</html>

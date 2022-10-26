@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<body>
+    <h2>STUDENT REGISTRATION FORM</h2>
+    <form action="backend.php">
+        <!-- it means that the code or form are save in php data -->
+        <!-- <div></div> means divison of line -->
+
+        <div> <label for="id"> Student Id:</label><input type="int" name="myId" id="id"></div> <br>
+        <div><label for="name"> Student Name:</label> <input type="text" name="myName" id="name"></div><br>
+        <!-- <label for="name">  Student Name:</label>is used to select auotomatically from studnet name -->
+
+
+        <div>Student Email: <input type="email" name="myEmail"> </div><br>
+        <div>Date of birth: <input type="date" name="myDate"></div><br>
+        <div>Roll No: <input type="number" name="myRollno"></div><br>
+        <div>Gender: Male <input type="radio" name="myGender"> Female: <input type="radio" name="myGender"></div><br>
+        <!-- if we use same where name = my gender in both than we can choose anyone of them  -->
+        <!-- if we donot use same where name =mygender in male and name = female than it will choose both in type= radio -->
+        <div>Are you eligible: <input type="checkbox" name="myCheckbox"></div><br>
+        <div>Write about yourself: <br><textarea name="myText" cols="30" rows="10"></textarea> </div>
+        <!-- textarea is used to write the text from the user  -->
+
+        <div><input type="submit" value="Submit Now"> <input type="reset" value="Reset Now"></div><br>
+        <!-- this code  is use for sumbit of value  and reset of value-->
+
+        <div><label for="car"> car:</label>
+            <select name="mycar" id="car">
+                <!-- id= car  and for = car should be same -->
+                <option value="mercedez"> mercedez</option>
+                <option value="BMW"> BMW</option>
+            </select>
+        </div>
+    </form>
+    <h3>school REGISTRATION</h3>
+    <form action="backend.php">
+        <div>student name: <input type="text" name=""></div>
+        <div>student roll no: <input type="number" name="myrollno"></div>
+        <div> student date: <input type="date" name="mydate"></div>
+        <div>gender: male <input type="radio"name="mygender"> female <input type="radio" name="mygender"></div>
+        <div>are you eligible: <input type="checkbox" name="mycheckbox"></div>
+        <div>write youself: <br> <textarea name="mytext" id="" cols="30" rows="10"></textarea> </div>
+        <div><input type="submit" value="submit now" > <input type="reset" name="reset now"></div>
+        <div><label for="i"> student id:</label><input type="int" name ="myid" id="i" ></div>
+        <div><label for="names"> student names</label><input type="text" name="myname" id="names"></div>
+        
+<div> <label for="cars"> car:</label>
+    <select name="mycar" id="cars">
+    
+
+<option value="option">option are: </option>
+<option value="audi">audi car</option>
+
+</select>
+    
+</div>
+
+    </form>
+
+</body>
+
+</html>

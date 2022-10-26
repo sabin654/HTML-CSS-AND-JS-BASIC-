@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box and text shadow</title>
+
+</head>
+<style>
+    .container{
+        display: flex;
+    }
+    .card{
+        padding: 23px 12px;
+        /* border: 2px solid rgb(216, 100, 100); */
+       background-color: rgb(100, 54, 54);
+       color: azure;
+       margin:23px 12px;
+
+       /* box-shadow: offset-x,offset-y,blur,spread,color (it means shadow bahira) */
+        box-shadow:9px 7px 6px 1px rgb(61, 61, 61);
+      /* box-shadow: inset -x,inset-y,blur,spread,color  (it meanins shadow bhitra) */
+      box-shadow: inset 2px 3px 2px 3px  royalblue;
+/* /* box-shadow: mutiple color shadow  */
+      box-shadow: 2px 3px red, 3px 4px greenyellow, 3px 2px blue;
+
+
+
+    }
+
+     .card h1{
+        text-shadow:9px 7px rgb(96, 72, 202);
+    }
+   
+    
+</style>
+
+
+<body>
+    <div class="container">
+        <div class="card" id="card1"> <h1>card 1</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum molestias eius praesentium porro minima doloremque impedit, nihil optio vitae obcaecati maxime aliquid, similique fuga aliquam? Repudiandae, rerum beatae. A voluptas necessitatibus nobis ipsum? Ad, similique asperiores.</p>
+        </div>
+
+        <div class="card" id="card3"><h1>card 2 </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum molestias eius praesentium porro minima doloremque impedit, nihil optio vitae obcaecati maxime aliquid, similique fuga aliquam? Repudiandae, rerum beatae. A voluptas necessitatibus nobis ipsum? Ad, similique asperiores.</p>
+        </div>
+        
+        <div class="card" id="card3"><h1>card 3 </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum molestias eius praesentium porro minima doloremque impedit, nihil optio vitae obcaecati maxime aliquid, similique fuga aliquam? Repudiandae, rerum beatae. A voluptas necessitatibus nobis ipsum? Ad, similique asperiores.</p>
+        </div>
+    </div>
+    
+</body>
+</html>

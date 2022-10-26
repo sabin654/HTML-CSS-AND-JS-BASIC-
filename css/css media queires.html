@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media queires</title>
+    
+</head>
+<style>
+    .box{
+        background-color: blue;
+        color:rgb(248, 248, 248);
+        font-size: 50px;
+        text-align: center;
+        display: none;
+    }
+
+    /* @media ko kam chai kati dekhi kati samma display garne bahne kura ma help garxa  */
+    /* @media only screen and ko kam chai screen ma matra lagu hune bhnna khojeko ho  */
+    /* max width and min width diyo bhane chai kai dehi kati samma dekhauxa screen ma bahnn kura h0 */
+    /* for example : 0px dekhi 100px means 0 dekhi 100 px samma matra dekhauxa screen ma */
+
+@media only screen and (max-width:500px){ 
+    #box1{
+        background-color: red;
+color:black;
+        display:block;
+    }
+}
+@media only screen and (min-width:500px) and (max-width:700px){
+    #box2{
+        background-color: rgb(99, 218, 20);
+color:black;
+        display:block;
+    }
+}
+
+@media only screen and (min-width:700px) and (max-width:900px){
+    #box3{
+        background-color: rgb(23, 20, 218);
+color:black;
+        display:block;
+    }
+}
+
+@media only screen and (min-width:900px) and (max-width:1200px){
+    #box4{
+        background-color: rgb(218, 20, 96);
+color:black;
+        display:block;
+    }
+}
+
+
+    
+
+</style>
+<body>
+    <div class="box" id="box1"> i am iphone</div>
+    <div class="box" id="box2">i am samsung</div>
+    <div class="box" id="box3">i am redmi</div>
+    <div class="box" id="box4">i am huwai</div>
+
+</body>
+</html>

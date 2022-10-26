@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox  </title>
+</head>
+<Style>
+    .container{
+       height:500px;
+       width:100%;
+       border: 2px solid tomato;
+       /* initialzie the container as a flex box */
+       display: flex; 
+        /* flex properties is for flex container */
+/* .................................................................................... */
+
+                         /* flex direction */
+    /* flex-direction: row ; (is a default value) */
+
+    flex-direction: row; 
+        /* flex-direction: column;( column ma janxa)
+        flex-direction: row-reverse;( row ma janxa tara reverse bhayexa) */
+ /* .......................................................................................       */
+
+                            /* flex wrap */
+       /* flex-wrap:wrap;(yesle mb ma or kunai screen ma  ghataudai jada box step by step tala janxa  ) 
+       flex-wrap:wrap-reverse; ( wrap pani hunxa tara reverse bata) */
+
+/* ........................................................................................ */ 
+                            /* flex flow */
+       /* flex-flow: column-reverse wrap;   ( flex dirextion + wrap ekkai choti garna milxa flex flow bata)*/ 
+
+/* ................................................................................................ */
+                     /* justify content */
+
+       /* justify-content: center; (all the content will be in center) */
+       /* justify-content: space-evenly;  ( space aauxa  start ra end dekhi nai) */
+       /* justify-content: space-around; ( space aauxa start ra end ma barabar sano hunxa  tara bich ma space badi hunxa) */
+
+       /* justify-content: space-between; ( space aauxa tara start ra end bahek) */
+  /* ....................................................................................... */
+
+                            /* align-items */
+
+    /* align-items: center;  (container ko bich ma aauxa tala ra thi duitai bata) */
+    /* align-items:flex-start;  (aagadi bata start hunxa  right left side bata container ) */
+    /* align-items:flex-end;  (paxadi bata start hunxa it means right side bata container ) */
+align-items: stretch;
+
+    }
+    .item{
+        width:200px;
+        height:200px;
+        border: 2px solid rgb(65, 63, 205);
+        background-color: rgb(127, 205, 63);
+        margin:2px;
+        padding: 8px;
+    }
+    #item1{
+        /* flex properties for flex item */
+
+                            /* order */
+        /* order:4; (jasko order thulo xa tyo last  ma janxa) */
+/* ................................................................................. */
+                            /* flex grow */
+/* flex-grow: 1; ( yesma chai jun chai item lai diyo order tai chai baddai janxa jati diyo teti nai and megative num nadeko ramo) */
+/* .................................................................................. */
+ 
+                            /* flex shrink */
+/* flex-shrink: 2; ( yesma chai jun chai item lai diyo shrink  tai chai sano hudai janxa jati diyo teti nai) */
+/* .......................................................................... */
+                        /* flex-basis: ; */
+
+/* flex-basis: 900px; */
+/* when the flex-direction is set to row  than flex-basis: will control width */
+/* when the flex-direction is set to column than flex-basis: will control height */
+
+
+
+    }
+ 
+</Style>
+<body>
+    <h3>FlexBox</h3>
+  <div class="container">
+    <div class="item" id="item1">first box</div>
+    <div class="item" id="item2">second box</div>
+    <div class="item" id="item3">third box</div>
+    <div class="item" id="item4">fouth box</div>
+    <div class="item" id="item5">fifth box</div>
+    <div class="item" id="item6">sixth box</div>
+
+
+
+
+  </div>
+
+</body>
+</html>

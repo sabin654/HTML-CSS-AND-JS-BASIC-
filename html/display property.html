@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display property</title>
+    <!-- there are different type of display propert and they are :
+
+    block - p, div, h1, form  
+    1) start with new line
+    2)full width linxa
+    3) we can aplly both height and width
+
+    inline- a, img, span 
+    1) no start with new line
+    2)no full width only keep necessary width
+    3) we can not aplly both height and width
+
+    inline-block 
+    none 
+-->
+</head>
+<style>
+    header {
+        margin: auto;
+        border: 2px solid red;
+        width: 1330px;
+        height: auto;
+        padding: 4px;
+    }
+
+    img {
+        display: block;
+
+        width: 100px;
+        height: 100px;
+        margin: auto;
+
+    }
+
+    h3 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: large;
+        margin: 0px;
+        text-align: center;
+
+
+    }
+
+    .box {
+        border: 3px solid purple;
+        background-color: grey;
+        margin: 4px;
+        padding: 30px;
+        display: inline-block;
+        width: 335px;
+        box-sizing: border-box;
+
+
+
+    }
+
+    .contener {
+        margin: auto;
+        width: 1038px;
+
+    }
+</style>
+
+<body>
+    <header class="top">
+        <img src="s.jpg" alt="">
+        <h3> Welcome to Sabin Blog</h3>
+    </header>
+
+    <div class="contener">
+        <div class="box">
+            <h4 class="heading">HEADING</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis laudantium dolor ullam, illum id
+                quia accusantium enim reprehenderit eaque ut saepe quas inventore, laboriosam odit minima, earum optio
+                nisi doloremque veniam. Natus, et voluptatibus!</p>
+
+        </div>
+
+        <div class="box">
+            <h4 class="heading">HEADING</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis laudantium dolor ullam, illum id
+                quia accusantium enim reprehenderit eaque ut saepe quas inventore, laboriosam odit minima, earum optio
+                nisi doloremque veniam. Natus, et voluptatibus!</p>
+
+        </div>
+
+        <div class="box">
+            <h4 class="heading">HEADING</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis laudantium dolor ullam, illum id
+                quia accusantium enim reprehenderit eaque ut saepe quas inventore, laboriosam odit minima, earum optio
+                nisi doloremque veniam. Natus, et voluptatibus!</p>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

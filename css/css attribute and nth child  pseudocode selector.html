@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css attribute and nth child pseudocode selector</title>
+</head>
+<style>
+    input {
+        display: block;
+
+        margin: auto;
+    }
+
+    /* it means it will select all the  text related to the type */
+    input[type='text'] {
+        background-color: blueviolet;
+        color: rgb(245, 245, 247);
+
+    }
+
+    /* it means it will only select the button */
+    input[type='button'] {
+        background-color: black;
+        color: rgb(54, 189, 189);
+    }
+
+    /* it means it will only select the the css which is targeted */
+    a[target='_blank'] {
+        color: black;
+    }
+
+    a[target='_bs'] {
+        color: brown;
+
+    }
+
+    /* it means it will select the number two list. if there is nth-child(3) than it will select number 3 list */
+    li:nth-child(2) {
+        color: blueviolet;
+    }
+    /* it means that n = 0 and 2n+3 calculate hudai css select garxa  */
+    li:nth-child(2n+3){
+color:brown
+    }
+    /* for odd */
+    li:nth-child(odd){
+        background-color: black;
+        color: white;
+    }
+    /* for even */
+    li:nth-child(even){
+        background-color: red;
+        color: white;   
+
+    }
+
+</style>
+
+<body>
+
+    <div class="container">
+        <h1><a href="google.com " target="_blank"> google </a> </h1>
+        <h1><a href="facbook.com " target="_bs"> facebook</a> </h1>
+        <form action="" class="form-control">
+            <input type="text" placeholder="enter your name">
+            <input type="password" placeholder="password">
+            <input type="button" value="submit">
+        </form>
+
+
+        <ul>
+            <li class="item" id="item1">sssss</li>
+            <li class="item" id="item2">dddddd</li>
+            <li class="item" id="item3">ffff</li>
+            <li class="item" id="item4">ggggg</li>
+            <li class="item" id="item5">hhhhh</li>
+            <li class="item" id="item6">kkkk</li>
+            <li class="item" id="item7">pppppppp</li>
+            <li class="item" id="item8">ooooooooo</li>
+            <li class="item" id="item9">iiiiiiii</li>
+
+
+        </ul>
+
+    </div>
+</body>
+
+</html>

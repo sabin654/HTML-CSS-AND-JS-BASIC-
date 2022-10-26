@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more selectors</title>
+</head>
+<style>
+    h1{
+        background-color: blue;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    div p{ 
+        /* (yesle div bhitra bhayeko sabai paragraph lai lagu garxa ) */
+        color: rgb(252, 11, 11);
+        
+    }
+    div li p{ 
+        /* (yesle div bhitra bhayeko list bhitra bhayeko  paragraph lai  matra lagu garxa ) */
+        color: rgb(252, 11, 11);
+        
+    }
+    div + p{ 
+        /* (yesle div bahira bhayeko lai matra use garxa ra yedi tesko paxadi ko sibling div xa bahnneni selct garxa) */
+        color: rgb(11, 252, 103);
+        
+    }
+
+
+</style>
+<body>
+    <h1>myself sabin</h1>
+    <div class="container">
+
+        <div class="row"> <p>this is a paragraph</p></div>
+        <div>
+            <ul>
+                <li>
+                    <p>sabin</p>
+                </li>
+            </ul>
+        </div>
+
+        <p>this is another pragrp</p>
+    </div>
+<p>sabin</p>
+</body>
+</html>

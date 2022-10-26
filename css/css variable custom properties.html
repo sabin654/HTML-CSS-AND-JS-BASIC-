@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variable and custom properties
+
+    </title>
+</head>
+<style>
+    :root{
+/* if we add root than we can easily chnage the color in the specific class */
+        --primary-color:rgb(209, 33, 33);
+        --secondary-color: blue;
+        --box-color: black;
+
+    }
+
+    
+    
+    .box{
+        /* --box-color: red; */
+        width:200px;
+        height:100px;
+        background-color: var(--secondary-color); 
+        margin:2px 3px; 
+        padding: 1px 2px;
+        border: 2px solid blue;
+        box-shadow:1px 1px 3px 1px var(--box-color)
+
+
+    }
+    .box1{
+        margin:2px 2px;
+        padding:2px 3px;
+        width: 200px;
+        height: 100px;
+        background-color: var(--box-color); 
+
+    }
+    .container{
+        
+    width:100px;
+    margin:auto;
+        background: var(--primary-color);
+
+        display: flex;
+        align-items:center;
+        justify-content:center
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

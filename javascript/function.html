@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+<body>
+    <div class="container">
+       
+            <h2>function</h2>
+        
+    </div>
+
+
+    <script>
+        function greet(name,age){
+            console.log(name+ " is a good boy");
+            console.log("he is "+ age + " years old" )
+
+
+        }
+
+        let age =20;
+        greet('sabin',age);
+        greet('raul',age);
+        greet('sam',age);
+
+
+        // function 
+
+        function myName(){
+            console.log("i am sabin ");
+            console.log("i am sa ");
+            console.log("i am sab ");
+            console.log("i am sab ");
+            
+        };  
+       myName();
+       
+
+// ................................................................................
+//  function with parameter
+
+// syntax:
+// function function_name(parameter1,parameter2){
+//     statement;
+// }
+// function_name(argument1 ,argument2);
+
+// example 1:
+
+function name(fname,lname,age){
+    console.log("his name is " + fname + lname +" he is " + age + " years old");
+    
+};
+    name('sabin',' bhandari',40) ;  
+    
+
+// example 2:
+
+    function sum(a,b){
+        console.log( "the sum of a+b is " + (a + b));
+    }
+    sum(2,4);
+   
+// .....................................................................................
+        
+//  function with return value 
+
+// example 1
+function name(fname,lname,age){
+    let a= (" hello " + fname + lname +" your age is  " + age + " years old");
+    return a;
+};
+   let b= name('sabin',' bhandari',40);
+   console.log(b);
+   let c= name('sam',' bhandari',30);
+   console.log(c);
+
+
+   
+//    example 2
+
+console.log("total marks = 500\n" + "total subject = 5");
+
+function sub(english,math,health,eco,computer){
+ let sum =(english+math+health+eco+computer);
+ return sum;
+}
+
+let obtain=sub(50,30,40,30,40);
+console.log("obtain marks:- " + obtain);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and time </title>
+
+</head>
+<body>
+    <div class="container">
+<span id="time"></span>
+    </div>
+
+    <script>
+
+        
+let now =new Date();
+console.log(now);
+
+let dt =new Date(0);
+console.log(dt);
+
+// let newdate=new Date("2023-01-20");
+// console.log (newdate);
+
+// let a=new Date(year,month,date,hours,minutes,second);
+let a=new Date(2023,1,22,1,1,1,11);
+console.log(a);
+
+
+let b=a.getFullYear();
+console.log("year= "+ b);
+
+let c=a.getMonth();
+console.log("month = " +c);
+
+let d=a.getTime();
+console.log("Time = " +d);
+
+let e=a.getDay();
+console.log("day = " +e);
+
+//hamile sajilai mathi diye ko date time year etc change garna sakxam by set use garera for example:
+ a.setFullYear(2021);
+console.log(a);
+
+a.setDate(2);
+console.log(a);
+
+a.setMonth(5);
+console.log(a);
+
+
+function clock(){
+    time=new Date();
+    console.log(time);
+    document.getElementById('time').innerHTML=time;z
+    
+}
+setInterval(clock,1000);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String function</title>
+</head>
+<body>
+    
+
+    <script>
+
+// There are 3 methods for extracting a part of a string:
+
+// slice(start, end)
+// substring(start, end)
+// substr(start, length)
+
+// .....................................................................................
+
+        var str= "this is String";
+        console.log(str);
+
+        // first occurance of substring
+
+        var position=str.indexOf("g")
+        console.log(position);
+        //  the output will be 13
+
+// last occurance of substring
+    var str=str.lastIndexOf("i");
+    console.log(str);
+    //  the output will be 11
+
+// .....................................................................................
+
+
+
+// slice method (start,end)
+
+    var str="sabin,sam";
+    var str=str.slice(2,5);
+    console.log(str);
+    //  the output will be bin
+
+
+    // slice and substring are same just slice can take negative value where as substring dosnt take negative value
+// .....................................................................................
+
+
+
+// substring method (start,end)
+
+ var str="banana,apple";
+ str=str.substring(3,5);  
+ console.log(str);
+//  the output will be an 
+
+
+
+// .....................................................................................
+
+// substr method  (start,length)
+
+var str="bike,car";
+str=str.substr(0,3);
+console.log(str);
+// the output will be bik
+
+// .....................................................................................
+
+
+
+
+// replace method  
+
+
+var str=" sabin is a good boy";
+str= str.replace("sabin","ram"); 
+console.log(str);
+// the output will be : ram is a good boy.
+
+// By default, the replace() method replaces only the first match but 
+// to replace all matches, use a regular expression with a /g flag (global match):
+ 
+var str="ram is good and  ram is handsome";
+str=str.replace(/ram/g , "sabin");
+console.log(str);
+
+// we can write short mehtod by :
+// console.log(str. replace(/ram/g , "sabin"));
+
+
+// the output will be sabin is good and sabin is handsome
+
+// .....................................................................................
+
+
+
+
+
+// string toUpperCase()
+
+var str="sabin is very nice";
+str=str.toUpperCase();
+console.log(str);
+// the output will be SABIN IS VERY NCIE
+
+// .....................................................................................
+
+
+
+// String toLowerCase() 
+
+var str="RAM IS A MAN";
+console.log(str.toLowerCase());
+// the output will be ram is a man
+// .....................................................................................
+
+
+
+
+// String concat()
+var str="sam is cool";
+console.log(str.concat(" very good"));
+// the output will be sam is cool very good 
+
+
+// both are same
+
+var str="sam is cool" +  " he is nice";
+console.log(str);
+// the output will be  sam is cool he is nice
+
+// .....................................................................................
+
+
+
+// String trim()
+// The trim() method removes whitespace from both sides of a string not from middle:
+var str= "     he is    very      cool            ";
+console.log(str.trim());
+// the output will be he is      very    cool
+
+// .....................................................................................
+
+
+// String Characters
+
+// 1) charAt(position)
+// 2) charCodeAt(position)
+
+
+
+// charAt(position) tell the postion of character or string.
+
+var str="sqwertyuiop";
+console.log(str.charAt(3));
+console.log(str.charAt(7));
+
+// the output will be e  
+// the output will be u
+
+// ......................................................................................
+
+// charCodeAt(position) tell the postion of UTF-16 CODE:
+
+var str="sqwertyuiop";
+console.log(str.charCodeAt(3));
+
+// the output will be 101 because the postion of e in UTF-16 CODE is 101
+
+
+    </script>
+</body>
+</html>
